@@ -1,6 +1,5 @@
 package com.paic.arch.jmsbroker;
 
-import com.paic.arch.jmsbroker.adapter.ActiveMqAdapter;
 import com.paic.arch.jmsbroker.jsm.JmsMessage;
 import org.slf4j.Logger;
 

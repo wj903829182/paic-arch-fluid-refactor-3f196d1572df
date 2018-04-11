@@ -1,6 +1,5 @@
 package com.paic.arch.jmsbroker;
 
-import com.paic.arch.jmsbroker.jsm.JmsMessageImpl;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.broker.Broker;
 import org.apache.activemq.broker.BrokerService;
@@ -13,7 +12,7 @@ import java.lang.IllegalStateException;
 import static org.slf4j.LoggerFactory.getLogger;
 import static com.paic.arch.jmsbroker.SocketFinder.findNextAvailablePortBetween;
 
-public class JmsMessageBrokerSupport extends JmsMessageImpl{
+public class JmsMessageBrokerSupport {
     private static final Logger LOG = getLogger(JmsMessageBrokerSupport.class);
     private static final int ONE_SECOND = 1000;
     private static final int DEFAULT_RECEIVE_TIMEOUT = 10 * ONE_SECOND;
@@ -22,7 +21,7 @@ public class JmsMessageBrokerSupport extends JmsMessageImpl{
     private String brokerUrl;
     private BrokerService brokerService;
 
-    public JmsMessageBrokerSupport(String aBrokerUrl) {
+    private JmsMessageBrokerSupport(String aBrokerUrl) {
         brokerUrl = aBrokerUrl;
     }
 

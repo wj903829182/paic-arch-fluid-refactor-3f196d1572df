@@ -5,7 +5,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static com.paic.arch.jmsbroker.JmsMessageBrokerSupport.bindToBrokerAtUrl;
-import static com.paic.arch.jmsbroker.adapter.ActiveMqAdapter.bindToActiveMqBrokerAt;
+import static com.paic.arch.jmsbroker.ActiveMqBrokerSupport.bindToActiveMqBrokerAt;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class JmsMessageBrokerSupportTest {
